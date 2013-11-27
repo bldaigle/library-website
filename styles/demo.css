@@ -1,0 +1,49 @@
+/* Demo CSS - You do not need this css in your own slider */
+
+
+
+#container{
+	/* max-width:620px; */
+	margin:0 auto;
+}
+
+#banner-fade,
+#banner-slide{
+	 /* margin-bottom: 60px; */
+}
+
+ul.bjqs-controls.v-centered li a {
+	display:block;
+	padding:10px;
+	background:#fff;
+	color:#000;
+	text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background:#c2c2c2;
+	color:#fff;
+}
+
+ol.bjqs-markers li a{
+	padding: 15px 10px;
+	margin: 5px;
+	text-decoration: none;
+}
+
+ol.bjqs-markers ,
+ol.bjqs-markers {
+	
+}
+
+li.active-marker a {
+	background: url('../images/markerActive.png') no-repeat;
+}
+
+li.inactive-marker a {
+	background: url('../images/markerInactive.png') no-repeat;
+}
+
+p.bjqs-caption{
+	background: rgba(255,255,255,0.5);
+}

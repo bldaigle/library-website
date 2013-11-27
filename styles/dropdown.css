@@ -1,0 +1,76 @@
+/*
+	Todd Motto Labs
+	URL: www.toddmotto.com
+*/
+
+/*------------------------------------*\
+   Clickable Dropdown
+\*------------------------------------*/
+
+
+.click-nav {
+	/* margin:100px auto; */
+	z-index: 1000;
+}
+.click-nav ul {
+	/* font-weight:900; */
+
+}
+.click-nav ul li {
+	position:relative;
+	list-style:none;
+	cursor:pointer;
+	padding-bottom: 1em;
+}
+.click-nav ul li ul {
+	border: 1px solid #c2c2c2;
+	background: #fff;
+	padding-top: 1.5em;
+	padding-left: .75em;
+	position:absolute;
+	left: -10px;
+	right:0;
+	top: 30px;
+}
+
+/*.click-nav ul .clicker {
+	background:#2284B5;
+	color:#FFF;
+} */
+
+/* .click-nav ul .clicker:hover,
+.click-nav ul .active {
+	background:#196F9A;
+} */
+
+/* .click-nav img {
+	position:absolute;
+	top:9px;
+	left:12px;
+} */
+
+.click-nav ul li a {
+	color: #008cdc;
+	transition:background-color 0.2s ease-in-out;
+	-webkit-transition:background-color 0.2s ease-in-out;
+	-moz-transition:background-color 0.2s ease-in-out;
+	display:block;
+	padding: 0;
+	text-decoration:none;
+}
+
+/* .click-nav ul li a:hover {
+	background:#F2F2F2;
+} */
+
+/* Fallbacks */
+.click-nav .no-js ul {
+	display:none;
+}
+.click-nav .no-js:hover ul {
+	display:block;
+}
+
+a.clicker {
+	color: #008cdc;
+}

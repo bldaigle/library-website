@@ -1,0 +1,55 @@
+.popover {
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	-webkit-transition: opacity 0.25s linear;
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	-moz-transition: opacity 0.25s linear;
+	background-color: #fff;
+	border: 2px solid #c2c2c2;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	color: #484747;
+	display: none;
+	opacity: 0;
+	position: relative;
+	top: 50px;
+	left: -50px;
+	transition: opacity 0.25s linear; 
+	width: 20%;
+ }
+ 
+.popover.active {
+	opacity: 1; 
+}
+	
+.popover > .triangle {
+	position: absolute;
+	top: 48px;
+	left: -30px;
+	border-top: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid #c2c2c2;
+	border-bottom: 15px solid transparent; 
+}
+.popover > .header {
+	font-weight: bold;
+	font-size:14px;
+	margin: 0;
+	padding: 1em 1em 0 1em;
+	height: 25px;
+	color: #484747;
+	background-color: #fff;
+	/* background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), color-stop(0.2, rgba(255, 255, 255, 0.4)), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, transparent), to(transparent) ); */
+	text-align: left; 
+}
+.popover > .content {
+	line-height: 1.2em;
+	padding: 1em;
+	overflow: hidden;
+}
+
+.content > ul > li {
+	list-style: none;
+}
+
+
+	
+		
