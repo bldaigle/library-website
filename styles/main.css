@@ -186,14 +186,13 @@ table {
 }
 
 th {
-	font-size: 1.25em;
+	font-size: 1em;
 	font-weight: bold;
 	padding-bottom: 1.25em;
 }
 
 td {
 	padding: .75em 1em .75em 0;
-	width: 33%;
 }
 
 tr.odd {
@@ -3805,6 +3804,7 @@ img.float-left {
 
 /* Styles for 360 Core Journal Finder */
 
+
 .SS_EJPPreContentHorizontalRules,
 .SS_SkipNavigationLinks,
 .SS_SearchResultsCount,
@@ -3893,6 +3893,7 @@ img.float-left {
 
 .SS_Holding table {
 	margin-left: 10px;
+	margin-top: 10px;
 }
 
 .SSJournalAlternateTitle {
@@ -4092,7 +4093,8 @@ a:active.refworks-plug {
 }
 
 .warning {
-	background: #ede0b6;
+	/* background: #ede0b6; */
+	background: #f4e78d;
 	margin-bottom: 10px;
 	margin-right: 65px;
 	padding: 5px 15px 5px 15px;
@@ -4103,9 +4105,32 @@ a:active.refworks-plug {
 	font-size: .75em;
 }
 
+p.warning-text-smaller {
+	font-size: .75em;
+}
+
 .room-profile {
 	overflow: hidden;
 	padding: 1em 0 1em 0;
+}
+
+#owuLoanPeriods,
+#otherLoanPeriods {
+	width: 100%;
+}
+
+#owuLoanPeriods td,
+#otherLoanPeriods td,
+#owuLoanPeriods th,
+#otherLoanPeriods th {
+	font-size: .85em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#otherLoanPeriods td,
+#owuLoanPeriods td {
+	border: 1px solid #ddd;
 }
 
 

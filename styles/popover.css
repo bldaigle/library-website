@@ -1,7 +1,63 @@
 /* Local CSS added by Ben */
 
-.journal-search-within > a {
+.journal-search-within {
+  padding-left: 10px;
+}
+
+.journal-search-within > a:link {
 	cursor: pointer;
+  color: #008cdc;
+  text-decoration: none;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  transition-property: color;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.journal-search-within > a:visited {
+  cursor: pointer;
+  color: #008cdc;
+  text-decoration: none;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  transition-property: color;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.journal-search-within > a:hover {
+  cursor: pointer;
+  color: #66baea;
+  text-decoration: none;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  transition-property: color;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.journal-search-within > a:active {
+  cursor: pointer;
+  color: #008cdc;
+  text-decoration: none;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  transition-property: color;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 input[type="text"] {
@@ -15,7 +71,7 @@ input[type="text"] {
 
 input.searchButton-small {
 	border: none;
-	background: url('../images/search-button-30px.png');
+	background: url('http://library.owu.edu/images/search-button-30px.png');
 	height: 30px;
 	width: 30px;
 	cursor: pointer;
