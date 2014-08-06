@@ -18,12 +18,12 @@
 //
 // var open=["X","9:00am","9:00am","9:00am","9:00am","9:00am","1:30pm"];
 
-	var openhours=["1pm","8am","8am","8am","8am","8am","10am"]; // Edit this line 
+	var openhours=["X","8:30am","8:30am","8:30am","8:30am","8:30am","X"]; // Edit this line 
 
 // Enter the time your library closes, starting with Sunday. If your library is 
 // closed, enter "X" for the time.
 
-	var closehours=["2am","2am","2am","2am","2am","5pm","5pm"]; // Edit this line
+	var closehours=["X","5pm","5pm","5pm","5pm","5pm","X"]; // Edit this line
 		
 // Do not edit below this line
 // -------------------------------------------------------------------
@@ -40,8 +40,14 @@
 		if(openTime == "X") {
 			var libhours = "Closed";
 			document.write(libhours);
-		} else {
-			var libhours = openTime + " &#8211; " + closeTime;
-			document.write(libhours);
+		}
+		else {
+			if(openTime == "H") {
+				var libhours = "Closed for Memorial Day";
+				document.write(libhours);
+			} else {
+				var libhours = openTime + " &#8211; " + closeTime;
+				document.write(libhours);
+			}
 		}
 	}

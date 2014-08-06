@@ -1,0 +1,253 @@
+
+
+body {
+	background: url('http://library.owu.edu/images/headerflank.png') repeat-x;
+	color: #000000;
+	line-height: 1.25em;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('http://library.owu.edu/fonts/bebas-test/bebas___-webfont.eot');
+    src: url('http://library.owu.edu/fonts/bebas-test/bebas___-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('http://library.owu.edu/fonts/bebas/BEBAS___-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('http://library.owu.edu/fonts/bebasneue/BebasNeue-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('http://library.owu.edu/fonts/opensans/OpenSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('http://library.owu.edu/fonts/opensans/OpenSans-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('http://library.owu.edu/fonts/opensans/OpenSans-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('http://library.owu.edu/fonts/opensans/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url('http://library.owu.edu/fonts/opensans/OpenSans-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#header {
+	background: url('http://library.owu.edu/images/header.png') no-repeat;
+	height: 100px;
+	font-size: 137%;
+	max-width: 1024px;
+	min-width: 480px;
+	padding-left: 3em;
+	padding-top: 1em;
+	text-align: left;
+}
+
+#header img {
+	display: block;
+	float: left;
+	padding-left: .5em;
+}
+
+#headerlinks {
+	float: right;
+	width: 45%;
+}
+
+#headerlinks img {
+	float: none;
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+#headerlinks a:link {
+	color: #d1d1d1;
+	text-decoration: none;
+}
+
+#headerlinks a:visited {
+	color: #d1d1d1;
+	text-decoration: none;
+}
+
+#headerlinks a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#headerlinks a:active {
+	color: #d1d1d1;
+	text-decoration: none;
+}
+
+#headerlinks > ul > li > ul > li {
+	box-sizing: border-box; /* includes padding in the declared width */
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -o-box-sizing: border-box;
+   transition: all .25s ease-in-out; /* Fancy CSS3 Transitions!!! */
+   -webkit-transition: all .25s ease-in-out;
+   -moz-transition: all .25s ease-in-out;
+   -o-transition: all .25s ease-in-out;
+}
+
+#s-lib-bc .breadcrumb {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	margin-top: 25px;
+}
+
+.quicklinks {
+	display: inline;
+	font-size: .75em;
+}
+
+.quicklinks > ul {
+	display: inline;
+}
+
+.quicklinks > ul > li {
+	display: inline;
+	padding-right: 3%;
+}
+
+.quicklinks > ul > li > ul {
+	display: inline;
+}
+
+.quicklinks > ul > li > ul > li {
+	display: inline;
+}
+
+.topNavigation {
+	font-size: 100%;
+	margin-top: 2em;
+}
+
+.topNavigation a.topNavLink {
+	color: #fff;
+	display: inline;
+	font-family: "BebasRegular", Arial, sans-serif;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+}
+
+.topNavigation > ul {
+	list-style: none;
+	position: relative;
+}
+
+.topNavigation > ul > li {
+	float: left;
+	list-style: none;
+	padding-right: 15%;
+}
+
+.topNavigation > ul > li:hover,
+.topNavigation > ul > li > ul > li:hover {
+	background: #000;
+	position: relative;
+	transition: all .25s ease-in-out; /* Fancy CSS3 Transitions!!! */
+	z-index: 410;
+   -webkit-transition: all .25s ease-in-out;
+   -moz-transition: all .25s ease-in-out;
+   -o-transition: all .25s ease-in-out;
+}
+
+.topNavigation > ul > li > ul {
+	font-size: .8em;
+	position: absolute;
+	visibility: hidden;
+	top: 100%;
+	left: 0;
+	z-index: 420;
+	width: 120%;
+}
+
+.topNavigation > ul > li:hover ul {
+	background: #000;
+	max-height: 1000px;
+	transition: all .25s ease-in-out; /* Fancy CSS3 Transitions!!! */
+   -webkit-transition: all .25s ease-in-out;
+   -moz-transition: all .25s ease-in-out;
+   -o-transition: all .25s ease-in-out;
+}
+
+.topNavigation > ul > li > ul > li {
+	background-color: #000;
+	list-style: none;
+	padding: .7em;
+}
+
+.topNavigation > ul > li > ul > li:hover {
+	background: #777;
+}
+
+.topNavigation > ul > li > ul > li > a:link,
+.topNavigation > ul > li > ul > li > a:visited,
+.topNavigation > ul > li > ul > li > a:hover {
+	color: #d1d1d1;
+	font-family: "Open Sans", Arial, sans-serif;
+	padding-top: 1em;
+}
+
+.topNavigation > ul > li > ul > li > a:hover {
+	color: #fff;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+.topNavigation ul > li:hover > ul {
+	visibility: visible;
+}
+
+.topNavigation > ul > li > ul > li > ul {
+	font-size: 1em;
+	position: absolute;
+	visibility: hidden;
+	top: 15px;
+	left: 100%;
+	z-index: 440;
+	width: 150px;
+}
+
+.topNavigation ul > li > ul > li > ul > li {
+	background-color: #000;
+	list-style: none;
+	padding: .7em;
+}
+
+.topNavigation > ul > li > ul > li > ul > li:hover {
+	background: #777;
+}

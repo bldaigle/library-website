@@ -28,7 +28,7 @@
 				<ul>
 					<li><a href="http://bb.owu.edu" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'Blackboard']);">Blackboard</a></li>
 					<li>&#124;</li>
-					<li><a href="reserves.html" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'Reserves']);">Reserves</a></li>
+					<li><a href="reserves.html" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'Reserves']);">Course Reserves</a></li>
 					<li>&#124;</li>
 					<li><a href="https://consort.library.denison.edu/patroninfo" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'My Account']);">My Library Account</a></li>
 				</ul>
@@ -63,7 +63,7 @@
 					<li><a href="#" class="topNavLink">Services</a>
 						<ul>
 							<li><a href="research-help.html" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services Research Help']);">Research Help</a></li>
-							<li><a href="http://libguides.owu.edu/interlibraryloan" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services ILL']);">Interlibrary Loan</a></li>
+							<li><a href="https://owu.illiad.oclc.org/illiad/logon.html" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services ILL']);">Interlibrary Loan</a></li>
 							<li><a href="media-center.html" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services Media Center']);">Media Center</a></li>
 							<li><a href="howto-cite.html" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services Citing']);">How to Cite</a></li>
 							<li><a href="print-copy-scan.html" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services Printing']);">Print, Copy, Scan</a></li>
@@ -114,16 +114,39 @@
 						<div class="tab-content">
 							<div class="tab-pane active" id="all">
 								<form id="summon-search" action="http://owu.summon.serialssolutions.com/search" method="get">
-									<input type="text" name="s.q" id="summon-search-input" placeholder="Search Summon for articles, books, and more"/>
-									<input type="hidden" name="s.cmd" value="addFacetValueFilters(ContentType,Book Review:t,Newspaper Article:t)" />
-									<input name="keep_r" type="hidden" value="true" />
+									<input type="hidden" name="ho" value="t" />
+									<input type="text" name="q" id="summon-search-input" placeholder="Search Summon for articles, books, and more"/>
 									<input type="submit" value=" " class="searchButton" onClick="_gaq.push(['_trackEvent', 'Searches', 'Search', 'Summon']);" /><br />
 									<input class="mobileSearchButton" type="submit" value="Search" onClick="_gaq.push(['_trackEvent', 'Searches', 'Search', 'Summon Mobile']);"/>
 								</form> <!-- /end Summon search form -->
 
 								<!-- <div class="warning">
+									<p class="warning-text">We are currently experiencing technical difficulties with ILLiad, our interlibrary loan system. Our vendor is aware of the issue and working to resolve it as quickly as possible.</p>
+									<p class="warning-text">In the meantime, please email requests to <a href="mailto:ill@owu.edu">ill@owu.edu</a></p>
+								</div> -->
 
-									<p class="warning-text">We are currently experiencing a technical issue with ERes. We are working with our vendor to resolve the issue as quickly as possible.</p>
+								<!-- <div class="warning">
+
+									<p class="warning-text">We are currently experiencing technical difficulties with CONSORT and links to many of our databases.</p>
+
+									<p class="warning-text">In the meantime, you can use the <a href="http://olc1.ohiolink.edu/search/X?b=fc2bg">OhioLINK Catalog</a> to search for materials in CONSORT. For those searching for articles, we have created a collection of our <a href="http://libguides.owu.edu/aecontent.php?pid=491229">most popular databases</a>.</p>
+
+								</div> -->
+
+								<!-- <div class="warning">
+
+									<p class="warning-text">CONSORT and off-campus access to many databases are currently unavaialble. We expect everything to be back up and running shortly.</p>
+
+									<p class="warning-text">In the meantime, you can use the <a href="http://olc1.ohiolink.edu/search/X?b=fc2bg">OhioLINK Catalog</a> to search for books in CONSORT, and you can access our <a href="http://libguides.owu.edu/aecontent.php?pid=491229">most popular databases</a> from on campus.</p>
+
+								</div> -->
+
+								<!-- <div class="warning">
+
+									<p class="warning-text">We are experiencing an intermittent technical issue with the All search box.</p>
+
+									<p class="warning-text">In the meantime, you can use <a href="http://consort.library.denison.edu/">CONSORT</a> to search for books. For articles, click on the Find Databases and Other Research Tools link below to select an article database.</p>
+
 
 								</div> -->
 
@@ -145,12 +168,14 @@
 												
 												<ul class="databases">
 													<li><h4>Databases</h4></li>
-													<li class="text-small"><a href="#pop-databases" role="button" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Databases', 'Click', 'Most Popular']);">Most Popular</a> &nbsp;&#124;&nbsp; <a href="#subject-databases" role="button" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Databases', 'Click', 'By Subject']);">By Subject Area</a> &nbsp;&#124;&nbsp; <a href="http://libguides.owu.edu/databases" onClick="_gaq.push(['_trackEvent', 'Databases', 'Click', 'All Databases']);">All Databases A-Z</a></li>
+													<li class="text-small"><a href="#pop-databases" role="button" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Databases', 'Click', 'Most Popular']);">Most Popular</a> &nbsp;&#124;&nbsp; <a href="#subject-databases" role="button" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Databases', 'Click', 'By Subject']);">By Subject Area</a> &nbsp;&#124;&nbsp; <a href="http://libguides.owu.edu/az.php" onClick="_gaq.push(['_trackEvent', 'Databases', 'Click', 'All Databases']);">All Databases A-Z</a></li>
 												</ul>
 
 												<ul class="databases">
 													<li><h4>Other Tools</h4></li>
-													<li class="text-small"><a href="https://www.refworks.com/refworks2/?r=authentication::init&amp;groupcode=RWOHWesleyanU" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'RefWorks']);">RefWorks</a> &#124; <a href="http://owu.illiad.oclc.org/illiad/logon.html" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'ILLiad']);">ILLiad</a></li>
+													<li class="text-small desktop"><a href="https://www.refworks.com/refworks2/?r=authentication::init&amp;groupcode=RWOHWesleyanU" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'RefWorks']);">RefWorks</a> &#124; <a href="https://owu.illiad.oclc.org/illiad/logon.html" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'ILLiad']);">ILLiad</a></li>
+
+													<li class="text-small mobile"><a href="http://www.refworks.com/mobile/" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'RefWorks']);">RefWorks</a> &#124; <a href="https://owu.illiad.oclc.org/illiad/logon.html" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'ILLiad']);">ILLiad</a></li>
 												</ul>
 											</div><!-- /end .accordion-inner -->
 										</div><!-- /end #collapseOne .accordion-body collapse -->
@@ -164,11 +189,14 @@
 									<div class="modal-body">
 										<ul>
 											<li><a href="http://0-search.ebscohost.com.dewey2.library.denison.edu/login.aspx?profile=ehost&amp;defaultdb=a9h">Academic Search Complete</a></li>
+											<li class="desktop"><a href="http://0-www.artstor.org.dewey2.library.denison.edu/">ARTstor</a></li>
+											<li class="mobile"><a href="http://0-mobile.artstor.org.dewey2.library.denison.edu/">ARTstor</a></li>
 											<li><a href="http://0-search.ebscohost.com.dewey2.library.denison.edu/login.asp?profile=web&amp;defaultdb=bth">Business Source Complete</a></li>
 											<li><a href="http://0-search.ebscohost.com.dewey2.library.denison.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ehh">Education Research Complete</a></li>
 											<li><a href="http://0-scholar.google.com.dewey2.library.denison.edu">Google Scholar</a></li>
 											<li><a href="http://0-www.jstor.org.dewey2.library.denison.edu/cgi-bin/jstor/gensearch">JSTOR</a></li>
-											<li><a href="http://0-www.lexisnexis.com.dewey2.library.denison.edu/hottopics/lnacademic">LexisNexis Academic</a></li>
+											<li class="desktop"><a href="http://0-www.lexisnexis.com.dewey2.library.denison.edu/hottopics/lnacademic">LexisNexis Academic</a></li>
+											<li class="mobile"><a href="http://0-www.lexisnexis.com.dewey2.library.denison.edu/hottopics/lnacademic/mobile">LexisNexis Academic</a></li>
 											<li><a href="http://0-search.ebscohost.com.dewey2.library.denison.edu/login.asp?profile=ehost&amp;defaultdb=mnh">MEDLINE</a></li>
 											<li><a href="http://0-search.ebscohost.com.dewey2.library.denison.edu/login.asp?profile=web&amp;defaultdb=mzh">MLA</a></li>
 											<li><a href="http://0-www.oed.com.dewey2.library.denison.edu">Oxford English Dictionary</a></li>
@@ -176,7 +204,8 @@
 											<li><a href="http://0-search.ebscohost.com.dewey2.library.denison.edu/login.asp?profile=web&amp;defaultdb=sih">SocIndex with Full Text</a></li>
 											<li><a href="http://0-search.ebscohost.com.dewey2.library.denison.edu/login.asp?profile=web&amp;defaultdb=http://search.ebscohost.com/login.asp?profile=web&amp;defaultdb=s3h">SPORTDiscus</a></li>
 											<li><a href="http://0-apps.isiknowledge.com.dewey2.library.denison.edu/WOS_GeneralSearch_input.do?product=WOS&amp;search_mode=GeneralSearch&amp;highlighted_tab=WOS#">Web of Science</a></li>
-											<li><a href="http://0-newfirstsearch.oclc.org.dewey2.library.denison.edu/dbname=WorldCat;done=referer;FSIP">WorldCat</a></li>
+											<li class="desktop"><a href="http://0-newfirstsearch.oclc.org.dewey2.library.denison.edu/dbname=WorldCat;done=referer;FSIP">WorldCat</a></li>
+											<li class="mobile"><a href="http://0-www.worldcat.org.dewey2.library.denison.edu/m">WorldCat</a></li>
 										</ul>
 									</div> <!-- /end .modal-body -->
 									<div class="modal-footer">
@@ -241,13 +270,30 @@
 									</select>
 									<input type="text" id="consort-search-input" name="searcharg" placeholder="Search CONSORT for books and media" onChange="_gaq.push(['_trackEvent', 'Searches', 'CONSORT Search Terms', this.form.searcharg.value]);" />
 									<input type="hidden" name="SORT" value="D" />
-									<input type="hidden" name="searchscope" value="6" />
+									<input type="hidden" name="searchscope" value="3" />
 									<input type="submit" value=" " class="searchButton" onClick="_gaq.push(['_trackEvent', 'Searches', 'Search', 'CONSORT']); _gaq.push(['_trackEvent', 'Searches', 'CONSORT Index', this.form.searchtype.value]);" />
 								</form> <!-- /end CONSORT search form -->
 
+
 								<!-- <div class="warning">
 
-									<p class="warning-text">We are currently experiencing technical difficulties with CONSORT and links to many of our databases. We are aware of the issue and are working with the appropriate technical teams to restore these services as quickly as possible.</p>
+									<p class="warning-text">We are currently experiencing technical difficulties with CONSORT and links to many of our databases.</p>
+
+									<p class="warning-text">In the meantime, you can use the <a href="http://olc1.ohiolink.edu/search/X?b=fc2bg">OhioLINK Catalog</a> to search for materials in CONSORT. For those searching for articles, we have created a collection of our <a href="http://libguides.owu.edu/aecontent.php?pid=491229">most popular databases</a>.</p>
+
+								</div> -->
+
+								<!-- <div class="warning">
+
+									<p class="warning-text">CONSORT will be unavailable on <span class="bold">Sunday, March 16 from 7am - 12pm</span>. Access to databases from off-campus will also be unavailable during this time.</p>
+
+									<p class="warning-text">You can use the <a href="http://olc1.ohiolink.edu/search/X?b=fc2bg">OhioLINK Catalog</a> to search for books in CONSORT, and you can access our <a href="http://libguides.owu.edu/aecontent.php?pid=491229">most popular databases</a> from on campus.</p>
+
+								</div> -->
+
+								<!--<div class="warning">
+
+									<p class="warning-text">We are currently experiencing technical difficulties with CONSORT and links to many of our databases.</p>
 
 									<p class="warning-text">In the meantime, you can use the <a href="http://olc1.ohiolink.edu/search/X?b=fc2bg">OhioLINK Catalog</a> to search for materials in CONSORT. For those searching for articles, we have created a collection of our <a href="http://libguides.owu.edu/aecontent.php?pid=491229">most popular databases</a>.</p>
 
@@ -256,7 +302,7 @@
 								<a href="#" id="bookSearchTrigger" class="searchtip-left">Search tips</a>
 
 								<div class="search-description">
-									<p class="textSize-smaller">Not finding what you need in <a href="http://consort.library.denison.edu/search" class="bold">CONSORT</a>? Try <a href="http://olc1.ohiolink.edu/search/" class="bold" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'OhioLINK']);">OhioLINK</a> or <a href="http://0-newfirstsearch.oclc.org.dewey2.library.denison.edu/dbname=WorldCat;done=referer;FSIP" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'WorldCat']);" class="bold">WorldCat</a>.<br />Or, order a book from our <a href="http://libguides.owu.edu/interlibraryloan" class="bold" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'Books Tab - Interlibrary Loan']);">Interlibrary Loan</a> service.</p>
+									<p class="textSize-smaller">Not finding what you need in <a href="http://consort.library.denison.edu/search~S3" class="bold">CONSORT</a>? Try <a href="http://olc1.ohiolink.edu/search/" class="bold" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'OhioLINK']);">OhioLINK</a> or <a href="http://0-newfirstsearch.oclc.org.dewey2.library.denison.edu/dbname=WorldCat;done=referer;FSIP" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'WorldCat']);" class="bold">WorldCat</a>.<br />Or, order a book from our <a href="https://owu.illiad.oclc.org/illiad/logon.html" class="bold" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'Books Tab - Interlibrary Loan']);">Interlibrary Loan</a> service.</p>
 								</div>
 
 								<div id="bookSearchPop">
@@ -411,16 +457,21 @@
 						<li data-target="#myCarousel" data-slide-to="3"></li>
 						<li data-target="#myCarousel" data-slide-to="4"></li>
 						<li data-target="#myCarousel" data-slide-to="5"></li>
+						<li data-target="#myCarousel" data-slide-to="6"></li>
 					</ol>
 					<!-- Carousel items -->
 					<div class="carousel-inner">
 
 						<div class="active item">
-							<a href="http://library.owu.edu/hours/springbreakhours-2014.pdf" onClick="_gaq.push(['_trackEvent', 'Content', 'Click', 'Carousel - 2014 Spring Break Hours']);"><img src="images/slideshow/spring-break.png" alt="2014 Spring Break Hours" /></a>
+							<a href="http://blog.owu.edu/libnews/2014/08/01/consort-has-a-new-look/"><img src="images/slideshow/consort-refresh.png" alt="CONSORT has a new look!" /></a>
 						</div>
 
 						<div class="item">
-							<a href="http://blog.owu.edu/libnews/2014/02/12/owu-libraries-2014-research-award/" onClick="_gaq.push(['_trackEvent', 'Content', 'Click', 'Carousel - 2014 Research Award']);"><img src="images/slideshow/research-award-2014.png" alt="2014 OWU Libraries Research Award" /></a>
+							<img src="images/slideshow/laptop-tables.png" alt="New Laptop Tables" /></a>
+						</div>
+
+						<div class="item">
+							<a href="http://blog.owu.edu/libnews/2014/04/02/alexander-wilsons-american-ornithology-added-to-owu-digital-collections/" onClick="_gaq.push(['_trackEvent', 'Content', 'Click', 'Carousel - Wilson\'s Ornithology']);"><img src="images/slideshow/ornithology.png" alt="Alexander Wilson&#39;s American Ornithology" /></a>
 						</div>
 
 						<div class="item">
@@ -430,19 +481,19 @@
 							</div>
 						</div>
 
-						<div class="item">
+						<!-- <div class="item">
 							<a href="http://blog.owu.edu/libnews/2014/01/13/library-introduces-credo-reference/" onClick="_gaq.push(['_trackEvent', 'Content', 'Click', 'Carousel - Credo Reference']);"/><img src="images/slideshow/credo.png" alt="Freedom Riders" /></a>
 							<div class="carousel-caption">
 								<h4>New online reference source: Credo Reference!</h4>
 							</div>
-						</div>
+						</div> -->
 
-						<div class="item">
+						<!-- <div class="item">
 							<a href="http://www.youtube.com/watch?feature=player_embedded&v=TmrhJHhyOMU" onClick="_gaq.push(['_trackEvent', 'Content', 'Click', 'Carousel - Summon Video']);"><img src="images/slideshow/summon-slide.jpg" alt="Summon" /></a>
 							<div class="carousel-caption">
 								<h4>What is Summon? Watch the video to find out</h4>
 							</div>
-						</div>
+						</div> -->
 
 						<div class="item">
 							<a href="http://libguides.owu.edu/content.php?pid=243985&sid=3922923" onClick="_gaq.push(['_trackEvent', 'Content', 'Click', 'Carousel - Wireless Printing']);"/><img src="images/slideshow/wireless-printing.jpg" alt="Wireless Printing" /></a>
@@ -451,12 +502,12 @@
 							</div>
 						</div>
 
-						<!-- <div class="item">
+						<div class="item">
 							<a href="http://libguides.owu.edu/power" onClick="_gaq.push(['_trackEvent', 'Content', 'Click', 'Carousel - Power Up']);"/><img src="images/slideshow/power-up.jpg" alt="Power Up" /></a>
 							<div class="carousel-caption">
 								<h4>It's not hard to find power in Beeghly Library. Just look for the stickers or check out our Power! guide for more info.</h4>
 							</div>
-						</div> -->
+						</div>
 
 						<!-- <div class="item">
 							<a href="http://libguides.owu.edu/studyspaces" onClick="_gaq.push(['_trackEvent', 'Content', 'Click', 'Carousel - Study Spaces']);"><img src="images/slideshow/study-spaces.jpg" alt="Study Spaces" /></a>
@@ -465,19 +516,13 @@
 							</div>
 						</div> -->
 						
-						<!-- <div class="item">
-							<a href="http://0-infotrac.galegroup.com.dewey2.library.denison.edu/itweb/owu?db=TTDA" onClick="_gaq.push(['_trackEvent', 'Content', 'Click', 'Carousel - The Times Digital Archive']);"><img src="images/slideshow/times-digital-archive.jpg" alt="Times Digital Archive" /></a>
-							<div class="carousel-caption">
-								<h4>New Database! Times Digital Archive (1785-2007)</h4>
-							</div>
-						</div> -->
 
-						<!-- <div class="item">
+						<div class="item">
 							<img src="images/slideshow/charging-stations.png" alt="Charging Stations at Beeghly Library" />
 							<div class="carousel-caption">
-								<h4>Charge your devices at Beeghly's new charging stations</h4>
+								<h4>Charge your devices at Beeghly's charging stations</h4>
 							</div>
-						</div> -->
+						</div>
 						
 					</div>
 					<!-- Carousel nav -->
