@@ -68,6 +68,7 @@
 							<li><a href="howto-cite.html" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services Citing']);">How to Cite</a></li>
 							<li><a href="print-copy-scan.html" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services Printing']);">Print, Copy, Scan</a></li>
 							<li><a href="https://www.refworks.com/refworks2/?r=authentication::init&amp;groupcode=RWOHWesleyanU" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services RefWorks']);">RefWorks</a></li>
+							<li><a href="https://flow.proquest.com" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services Flow']);">RefWorks Flow</a></li>
 							<li><a href="faculty-support.html" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Faculty Support']);">Faculty Support</a></li>
 							<li><a href="services.html" onClick="_gaq.push(['_trackEvent', 'Navigation', 'Click', 'Services More']);">More &#187;</a></li>
 						</ul>
@@ -173,9 +174,9 @@
 
 												<ul class="databases">
 													<li><h4>Other Tools</h4></li>
-													<li class="text-small desktop"><a href="https://www.refworks.com/refworks2/?r=authentication::init&amp;groupcode=RWOHWesleyanU" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'RefWorks']);">RefWorks</a> &#124; <a href="https://owu.illiad.oclc.org/illiad/logon.html" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'ILLiad']);">ILLiad</a></li>
+													<li class="text-small desktop"><a href="https://www.refworks.com/refworks2/?r=authentication::init&amp;groupcode=RWOHWesleyanU" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'RefWorks']);">RefWorks</a> &#124; <a href="https://flow.proquest.com" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'Flow']);">Refworks Flow</a> &#124; <a href="https://owu.illiad.oclc.org/illiad/logon.html" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'ILLiad']);">ILLiad</a></li>
 
-													<li class="text-small mobile"><a href="http://www.refworks.com/mobile/" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'RefWorks']);">RefWorks</a> &#124; <a href="https://owu.illiad.oclc.org/illiad/logon.html" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'ILLiad']);">ILLiad</a></li>
+													<li class="text-small mobile"><a href="http://www.refworks.com/mobile/" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'RefWorks']);">RefWorks</a> &#124; <a href="https://flow.proquest.com" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'Flow']);">Refworks Flow</a> &#124; <a href="https://owu.illiad.oclc.org/illiad/logon.html" onClick="_gaq.push(['_trackEvent', 'Other Tools &amp; Services', 'Click', 'ILLiad']);">ILLiad</a></li>
 												</ul>
 											</div><!-- /end .accordion-inner -->
 										</div><!-- /end #collapseOne .accordion-body collapse -->
@@ -416,14 +417,18 @@
 							</div> <!-- /end .tab-pane #journals -->
 
 							<div class="tab-pane" id="libguides">
-								<form method="get" action="http://libguides.owu.edu/search.php" name="homesearch">
-									<input type="hidden" name="iid" value="1335" />
-									<input type="hidden" name="c" value="0" />
-									<input type="hidden" name="pid" value="" />
-									<input type="text" id="libguides-searchbox" name="search" placeholder="Search guides by course name, number, or topic" onChange="_gaq.push(['_trackEvent', 'Searches', 'LibGuides Search Terms', this.form.search.value]);" />
+								<form method="get" action="http://libguides.owu.edu/srch.php" name="libguides-search">
+									<input type="text" id="libguides-searchbox" name="q" placeholder="Search guides by course name, number, or topic" onChange="_gaq.push(['_trackEvent', 'Searches', 'LibGuides Search Terms', this.form.search.value]);" />
 									<input type="submit" value=" " class="searchButton" onClick="_gaq.push(['_trackEvent', 'Searches', 'Search', 'LibGuides']);" />
 								</form>
-								<p class="text-smaller search_option">Browse&#58; &nbsp;<a href="http://libguides.owu.edu/browse.php" onClick="_gaq.push(['_trackEvent', 'Searches', 'Browse', 'All LibGuides']);">All Guides</a> &#124; <a href="http://libguides.owu.edu/browse.php?o=a" onClick="_gaq.push(['_trackEvent', 'Searches', 'Browse', 'LibGuides by Librarian']);">Guides by Librarian</a> &#124; <a href="http://libguides.owu.edu/browse.php?o=s" onClick="_gaq.push(['_trackEvent', 'Searches', 'Browse', 'LibGuides by Subject']);">Guides by Subject</a></p>
+
+								<p class="text-smaller search_option">Browse&#58; &nbsp;<a href="http://libguides.owu.edu/browse.php" onClick="_gaq.push(['_trackEvent', 'Searches', 'Browse', 'All LibGuides']);">All Guides</a></p> 
+								
+								<!-- Temporarily hiding these browse options because they are currently unavailable in the new LibGuides 2.0 platform -->
+								<!--	
+									<p>&#124; <a href="http://libguides.owu.edu/browse.php?o=a" onClick="_gaq.push(['_trackEvent', 'Searches', 'Browse', 'LibGuides by Librarian']);">Guides by Librarian</a> &#124; <a href="http://libguides.owu.edu/browse.php?o=s" onClick="_gaq.push(['_trackEvent', 'Searches', 'Browse', 'LibGuides by Subject']);">Guides by Subject</a></p> 
+								-->
+
 							</div>
 						</div> <!-- /end .tab-content -->
 
